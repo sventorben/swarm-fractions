@@ -7,6 +7,8 @@ A collection of custom [Wildfly Swarm Fractions](https://wildfly-swarm.gitbooks.
 
 ## Maven Coordinates
 
+**_ONLY SNAPSHOTS FOR NOW_**
+
 The latest RELEASE is available via Maven Central.
 
 ```
