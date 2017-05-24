@@ -79,6 +79,7 @@
 
     <modules>
         <module>responsetime</module>
+        <module>correlationid</module>
     </modules>
 
     <properties>

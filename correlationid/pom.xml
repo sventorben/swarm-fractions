@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>parent</artifactId>
+        <groupId>de.sven-torben.wildfly.swarm.fractions</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../</relativePath>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>correlationid</artifactId>
+    <packaging>jar</packaging>
+    <name>Correlation ID</name>
+    <description>A Wildfly Swarm Fraction to echo Correlation ID header back</description>
+
+    <properties>
+        <swarm.fraction.stability>unstable</swarm.fraction.stability>
+        <swarm.fraction.tags>Tracing</swarm.fraction.tags>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.wildfly.swarm</groupId>
+            <artifactId>undertow</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

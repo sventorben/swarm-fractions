@@ -1,6 +1,6 @@
-# Response Time Fraction
+# CorrelationID Fraction
 Registers an [Undertow HttpHandler](https://github.com/undertow-io/undertow/blob/master/core/src/main/java/io/undertow/server/HttpHandler.java) 
-to measure response time for every request and logs it to an [SLF4J Logger](https://www.slf4j.org/). 
+to echo X-Correlation-ID/X-Request-ID header to a client/caller. 
 
 ## Maven Coordinates
 
@@ -9,7 +9,7 @@ The latest RELEASE is available via Maven Central.
 ```
     <dependency>
         <groupId>de.sven-torben.wildfly.swarm.fractions</groupId>
-        <artifactId>responsetime</artifactId>
+        <artifactId>correlationid</artifactId>
         <version>0.0.1</version>
     </dependency>
 ```
