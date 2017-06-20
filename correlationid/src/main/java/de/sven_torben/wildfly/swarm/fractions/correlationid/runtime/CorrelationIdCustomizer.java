@@ -16,7 +16,7 @@ public class CorrelationIdCustomizer implements Customizer {
 
   private static final String SERVER_NAME = "default-server";
   private static final String HOST_NAME = "default-host";
-  private static final String FILTER_NAME = "headerecho";
+  private static final String FILTER_NAME = "correlationid";
 
   @Inject
   private Instance<UndertowFraction> undertowFractionInstance;
