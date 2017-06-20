@@ -4,7 +4,7 @@
 
     <groupId>de.sven-torben.wildfly.swarm.fractions</groupId>
     <artifactId>parent</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Swarm Fractions - Parent</name>
@@ -64,7 +64,7 @@
         <connection>scm:git:git://github.com/sventorben/swarm-fractions.git</connection>
         <developerConnection>scm:git:git@github.com:sventorben/swarm-fractions.git
         </developerConnection>
-        <tag>0.0.1</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <licenses>
