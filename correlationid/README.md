@@ -10,6 +10,6 @@ The latest RELEASE is available via Maven Central.
     <dependency>
         <groupId>de.sven-torben.wildfly.swarm.fractions</groupId>
         <artifactId>correlationid</artifactId>
-        <version>0.0.1</version>
+        <version>0.0.2</version>
     </dependency>
 ```
