@@ -14,13 +14,13 @@
     <description>A Wildfly Swarm Fraction to echo Correlation ID header back</description>
 
     <properties>
-        <swarm.fraction.stability>unstable</swarm.fraction.stability>
-        <swarm.fraction.tags>Tracing</swarm.fraction.tags>
+        <thorntail.fraction.stability>unstable</thorntail.fraction.stability>
+        <thorntail.fraction.tags>Tracing</thorntail.fraction.tags>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>org.wildfly.swarm</groupId>
+            <groupId>io.thorntail</groupId>
             <artifactId>undertow</artifactId>
         </dependency>
     </dependencies>

@@ -7,8 +7,8 @@
     <version>0.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Swarm Fractions - Parent</name>
-    <description>A collection of Wildfly Swarm Fractions.</description>
+    <name>Thorntail Fractions - Parent</name>
+    <description>A collection of Thorntail Fractions.</description>
     <url>http://sventorben.github.io/swarm-fractions</url>
 
     <inceptionYear>
@@ -35,6 +35,11 @@
             <url>https://github.com/sventorben</url>
             <organization>Conciso GmbH</organization>
             <organizationUrl>https://conciso.de</organizationUrl>
+        </contributor>
+        <contributor>
+            <name>Phillip Kruger</name>
+            <email>phillip.kruger@phillip-kruger.com</email>
+            <url>https://github.com/phillip-kruger</url>
         </contributor>
     </contributors>
 
@@ -91,30 +96,30 @@
         <main.basedir>${project.basedir}</main.basedir>
 
         <!-- Versions -->
-        <version.junit>5.0.0-M4</version.junit>
+        <version.junit>5.4.0</version.junit>
         <version.junit.surefire>1.0.0-M4</version.junit.surefire>
         <version.surefire>2.19.1</version.surefire>
         <version.failsafe>${version.surefire}</version.failsafe>
         <version.jacoco>0.7.9</version.jacoco>
         <version.checkstyle>7.7</version.checkstyle>
         <version.maven.checkstyle>2.17</version.maven.checkstyle>
-        <version.swarm>2017.5.0</version.swarm>
-        <version.swarm.fraction-plugin>54</version.swarm.fraction-plugin>
+        <version.thorntail>2.3.0.Final</version.thorntail>
+        <version.thorntail.fraction-plugin>93</version.thorntail.fraction-plugin>
     </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.wildfly.swarm</groupId>
+                <groupId>io.thorntail</groupId>
                 <artifactId>bom-all</artifactId>
-                <version>${version.swarm}</version>
+                <version>${version.thorntail}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>org.wildfly.swarm</groupId>
+                <groupId>io.thorntail</groupId>
                 <artifactId>spi</artifactId>
-                <version>${version.swarm}</version>
+                <version>${version.thorntail}</version>
             </dependency>
             <dependency>
                 <groupId>javax.inject</groupId>
@@ -125,7 +130,7 @@
             <dependency>
                 <groupId>javax.enterprise</groupId>
                 <artifactId>cdi-api</artifactId>
-                <version>1.2</version>
+                <version>2.0</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
@@ -150,7 +155,7 @@
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
-                <version>2.7.22</version>
+                <version>2.24.0</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>
@@ -158,29 +163,35 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.wildfly.swarm</groupId>
+            <groupId>io.thorntail</groupId>
             <artifactId>spi</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>javax.inject</groupId>
             <artifactId>javax.inject</artifactId>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>javax.enterprise</groupId>
             <artifactId>cdi-api</artifactId>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>java-hamcrest</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
@@ -200,7 +211,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.5.1</version>
+                    <version>3.8.0</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -451,9 +462,9 @@
                     <version>2.10.3</version>
                 </plugin>
                 <plugin>
-                    <groupId>org.wildfly.swarm</groupId>
-                    <artifactId>wildfly-swarm-fraction-plugin</artifactId>
-                    <version>${version.swarm.fraction-plugin}</version>
+                    <groupId>io.thorntail</groupId>
+                    <artifactId>thorntail-fraction-plugin</artifactId>
+                    <version>${version.thorntail.fraction-plugin}</version>
                     <executions>
                         <execution>
                             <phase>process-classes</phase>
@@ -495,8 +506,8 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
             </plugin>
             <plugin>
-                <groupId>org.wildfly.swarm</groupId>
-                <artifactId>wildfly-swarm-fraction-plugin</artifactId>
+                <groupId>io.thorntail</groupId>
+                <artifactId>thorntail-fraction-plugin</artifactId>
             </plugin>
         </plugins>
     </build>

@@ -1,5 +1,5 @@
-# Swarm Fractions
-A collection of custom [Wildfly Swarm Fractions](https://wildfly-swarm.gitbooks.io/wildfly-swarm-users-guide/fraction_authoring.html). 
+# Thorntail Fractions
+A collection of custom [Thorntail Fractions](https://docs.thorntail.io/2.3.0.Final/#_how_to_create_a_fraction). 
 
 [![Build Status](https://travis-ci.org/sventorben/swarm-fractions.svg?branch=master)](https://travis-ci.org/sventorben/swarm-fractions)
 
